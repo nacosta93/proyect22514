@@ -139,9 +139,6 @@ header i {
 }
 
 button {
-    header i:hover{
-        transform: scale: 1.2;;
-    }
     font-size: 16px;
     text-align: center;
     border-radius: 8px;
