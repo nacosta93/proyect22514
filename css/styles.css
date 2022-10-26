@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 90px 20px 0;
+    background-color: #1F2833;
+    color: #C5C6C7;
+}
+
+header {
+    background-color: #0B0C10;
+    color: #66FCF1;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+footer{
+    background-color: #0B0C10;
+    color: #66FCF1;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nav-link {
+    color: #66FCF1;
+    text-decoration: none;
+}
+
+.logo {
+    height: 70px;
+    animation-name: animalogo;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+@keyframes animalogo {
+    0% {left: 20px; top: -10px}
+    25% {left: 15px; top: 10px}
+    50% {left: 10px; top: -10px}
+    75% {left: 5px; top: 10px}
+    100% {left: 0px; top: 0px}
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    background-color: #034574;
+    transition: 0.5s;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    gap: 20px;
+    overflow: hidden;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.titind{
+    text-align: center;
+    text-decoration: overline;
+    
+}
+
+.sec{
+    border: 10px solid #45A29E;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.sec img {
+    width: 500px;
+    height: 500px;
+}
+
+
+header i {
+    font-size: 37px;
+    margin: 0 18px;
+    align-self: center;
+    text-decoration: 28px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+button {
+    header i:hover{
+        transform: scale: 1.2;;
+    }
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.button-checkout {
+    background-color: #0B0C10;
+    color: white;
+    border: 2px solid #45A29E;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+}
+
+.button-checkout:hover {
+    background-color: #45A29E;
+    color: #0B0C10;
+}
+
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-container {
+    margin: 49px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+.product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.product-container img {
+    width: 180px;
+    margin-top: 50px;
+}
+
+.product-container h2 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.product-container h3 {
+margin-top: 40px;
+}
+
+.button-add {
+    background-color: #0B0C10;
+    color: white;
+    border: 2px solid #45A29E; 
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+  
+.button-add:hover {
+    background-color: #45A29E;
+    color: #0B0C10;
+}
