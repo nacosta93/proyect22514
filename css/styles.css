@@ -8,19 +8,21 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    padding: 90px 20px 0;
+    /* padding: 90px 20px 0; */
     background-color: #1F2833;
     color: #C5C6C7;
 }
 
 header {
+    display: flex;
     background-color: #0B0C10;
     color: #66FCF1;
-    height: 80px;
+    margin: 0 auto;
+    /* height: 80px;
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
+    left: 0; */
 }
 
 footer{
@@ -34,6 +36,7 @@ footer{
 
 .nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 992px;
     margin: 0 auto;
@@ -63,11 +66,13 @@ footer{
 
 .nav-menu {
     display: flex;
+    flex-wrap: wrap;
     margin-right: 40px;
     list-style: none;
 }
 
 .nav-menu-item {
+    display: flex;
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
@@ -103,7 +108,7 @@ footer{
 .titind{
     text-align: center;
     text-decoration: overline;
-    
+    padding-top: 20px;    
 }
 
 .sec{
