@@ -435,4 +435,188 @@ margin-top: 40px;
 }
 
 
+.icon-footer {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 60px;
+    line-height: 50px;
+    color: #034574;
+    background-color: #1F2833;
+    transition: all 300ms ease;
+}
 
+
+.icons-footer {
+    font-size: 50px;
+}
+
+
+.icons-footer ul {
+    list-style: none;
+
+}
+
+.icons-footer ul li {
+    width: 75px;
+    height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+   border: 5px solid #66FCF1;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+.icons-footer ul li .fa {
+    color: white;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.icons-footer ul li:hover.facebook {
+    border: 5px solid #13069d;
+    box-shadow: 0 0 15px #13069d;
+    transition: all 0.5s ease;
+}
+
+.icons-footer ul li:hover .fa-facebook {
+    color: #13069d;
+    text-shadow: 0 0 15px #13069d;
+    transition: all 0.5s ease;
+}
+
+.icons-footer ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.icons-footer ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.icons-footer ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.icons-footer ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.icons-footer ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+.icons-footer ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+.container-contacto {
+    width: 100%;
+    height: 100vh;
+    background: #141a34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.useful-links{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+}
+.useful-links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-contacto form{
+    width: 90%;
+    max-width: 900px;
+    padding: 50px 30px 20px;
+    background: #0B0C10;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #45A29E;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #45A29E;
+    color: #66FCF1;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+form button{
+    background: #1F2833;
+    color: #66FCF1;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+form button:hover {
+    border: 5px solid #66FCF1;
+    box-shadow: 0 0 15px #66FCF1;
+    transition: all 0.5s ease;
+}
+label {
+    color: #00aced;
+}
+
+.input-group span {
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+
+#confirmar-error {
+    color: red;
+}

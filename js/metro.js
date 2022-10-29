@@ -7,18 +7,53 @@ let header = `
         <li class="nav-menu-item"><a href="merchandising.html" class="nav-menu-link nav-link">Merchandising</a></li>
         <li class="nav-menu-item"><a href="nosotros.html" class="nav-menu-link nav-link">Nosotros</a></li>
         <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-whatsapp"></i>
+
     </ul>
 </nav>
 </header>
 `
 document.getElementById("idheader").innerHTML = header
 
+let body = `
+
+`
+var nameError = document.getElementById('name-error');
+var telefonoError = document.getElementById('telefono-error');
+var emailError = document.getElementById('email-error');
+var mensajeError = document.getElementById('mensaje-error');
+var confirmarError = document.getElementById('confirmar-error');
+
+function validatename(){
+    var name = document.getElementById('contact-name').value;
+
+    if(name.length == 0){
+        nameError.innerHTML = 'Nombre  Requerido';
+        return false;
+    }
+
+
+    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*&/)){
+        nameError.innerHTML = '';
+        return false;
+    }
+    nameError.innerHTML = 'valid';
+    return true;
+}
+
 let footer = `
-<h3 class="hfooter">Radio Tosti® 2022</h3>
+
+<h3 class="hfooter">Radio Tosti® 2022</h3> 
+<div class="icons-footer">
+<ul>
+    <li class="facebook"><a href=""><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+    <li class="instagram"><a href=""><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+    <li class="twitter"><a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+    <li class="whatsapp"><a href=""><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+</ul>
+
+
+
+
 `
 document.getElementById("idfooter").innerHTML = footer
 
