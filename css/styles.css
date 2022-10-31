@@ -440,8 +440,8 @@ margin-top: 40px;
     text-decoration: none;
     font-size: 60px;
     line-height: 50px;
-    color: #034574;
-    background-color: #1F2833;
+    color: #743003;
+    background-color: #d87914;
     transition: all 300ms ease;
 }
 
@@ -615,6 +615,14 @@ label {
     right: 17px;
     font-size: 14px;
     color: red;
+}
+
+.input-group span i{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: seagreen;
 }
 
 #confirmar-error {
