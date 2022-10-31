@@ -291,7 +291,7 @@ margin-top: 40px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/front-end.jpg");
+    ,url(https://upload.wikimedia.org/wikipedia/commons/1/10/The_Rolling_Stones_Summerfest_in_Milwaukee_-_2015.jpg);
 
 }
 
@@ -301,7 +301,7 @@ margin-top: 40px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/full-stack.jpg");
+    ,url(https://indiehoy.com/wp-content/uploads/2017/04/martin.jpg);
 }
 
 .carta:nth-child(3){
@@ -310,7 +310,7 @@ margin-top: 40px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/python.jpg");
+    ,url(https://www.elciudadanoweb.com/wp-content/uploads/2022/02/LA-OREJA-DE-VAN-GOGH.jpg);
 
 }
 
@@ -619,4 +619,51 @@ label {
 
 #confirmar-error {
     color: red;
+}
+
+.results {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.result {
+	background-color: rgb(78, 75, 75);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	height: 450px;
+	width: 350px;
+}
+
+.result img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttoncat {
+	background-color: #66FCF1;
+	border: 0;
+	border-radius: 4px;
+	color: black;
+	font-size: 18px;
+	padding: 10px;
+	margin: 10px;
+	width: 350px;
+}
+
+.buttoncat:active {
+	transform: scale(0.98);
+}
+
+.buttoncat:focus {
+	outline: none
 }

@@ -7,7 +7,6 @@ let header = `
         <li class="nav-menu-item"><a href="merchandising.html" class="nav-menu-link nav-link">Merchandising</a></li>
         <li class="nav-menu-item"><a href="nosotros.html" class="nav-menu-link nav-link">Nosotros</a></li>
         <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
-
     </ul>
 </nav>
 </header>
@@ -51,9 +50,6 @@ let footer = `
     <li class="whatsapp"><a href=""><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
 </ul>
 
-
-
-
 `
 document.getElementById("idfooter").innerHTML = footer
 
@@ -70,3 +66,50 @@ function add(product, price) {
 function pay() {
     window.alert(products.join(", \n"));
 }
+
+const cat_btn = document.getElementById('cat_btn');
+const cat_result = document.getElementById('cat_result');
+
+cat_btn.addEventListener('click', getRandomCat);
+
+function getRandomCat() {
+	fetch('https://aws.random.cat/meow')
+		.then(res => res.json())
+		.then(data => {
+			cat_result.innerHTML = `<img src=${data.file} alt="cat" />`
+		});
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let generate_btn = document.querySelector(".generate_btn");
+//     generate_btn.addEventListener("click", fetchPics);
+
+// function fetchPics() {
+//     fetch("https://api.thecatapi.com/v1/images/search")
+//     .then(response => response.json())
+//     .then((data) => {
+//         let catsImgurl = data[0].url
+
+//         let catsImgEl = document.createElement("img")
+//         catsImgEl.setAttribute("src",)
+
+//     })
+// }
